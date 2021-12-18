@@ -7,3 +7,6 @@ jobs:
     steps:
       - checkout
       - run: ruby --version
+             gem install bundler
+             bundle install
+             bundle exec rake
