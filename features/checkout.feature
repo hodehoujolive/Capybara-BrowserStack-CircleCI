@@ -6,9 +6,9 @@ Background:
   And I fill in "password" with "secret_sauce"
   And I click "login-button"
   And I click "add-to-cart-sauce-labs-backpack"
-  And I am on https://www.saucedemo.com/cart.html
+  And I click on ".shopping_cart_link"
   And I click "checkout"
-  Then I should have current link "https://www.saucedemo.com/checkout-step-one.html"
+  
 
 Scenario: Successful checkout
   And I fill in "first-name" with "Jolivé"

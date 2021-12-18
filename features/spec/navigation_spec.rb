@@ -14,10 +14,6 @@ Then /^I should not see "([^"]*)"$/ do |text|
   page.should_not have_content(text)
 end
 
-And /^I debug$/ do
-  save_and_open_page
-end
-
 When /^I submit form "([^"]*)"$/ do |form|
     find_field(form).submit
 end
@@ -40,8 +36,4 @@ end
 
 Then /^I should have current link "([^\"]*)"$/ do |link|
     expect(page).to have_current_path link
-end
-
-When /^I?\s?click with css "([^"]*)"$/ do |css|
-    click_on(class: css)
 end
