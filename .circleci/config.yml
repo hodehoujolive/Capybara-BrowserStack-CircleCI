@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Test
+          name: e2e cross browser
           command: |
             ruby --version;
             gem install bundler;
