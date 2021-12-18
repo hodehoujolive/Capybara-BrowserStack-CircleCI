@@ -7,9 +7,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: e2e cross browser
+          name: e2e tests
           command: |
             ruby --version;
             gem install bundler;
             bundle install;
             bundle exec rake
+      - store_artifacts:
+          path: report/allure-results/
