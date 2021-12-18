@@ -22,3 +22,13 @@ Scenario: Login with invalid credentials(wrong_username / wrong_password)
   And I fill in "password" with "wrong_password"
   And I click "login-button"
   Then I should see "Epic sadface: Username and password do not match any user in this service"
+
+Scenario: Login without username
+  And I fill in "password" with "secret_sauce"
+  And I click "login-button"
+  Then I should see "Epic sadface: Username is required"
+
+Scenario: Login without password
+  And I fill in "user-name" with "standard_user"
+  And I click "login-button"
+  Then I should see "Epic sadface: Password is required"
