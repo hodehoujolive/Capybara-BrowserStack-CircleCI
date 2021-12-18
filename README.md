@@ -16,8 +16,10 @@
 
 ### Notes
 * You can view your test results on the [BrowserStack Automate dashboard](https://www.browserstack.com/automate)
-- Image
+![alt text](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.41.55.png)
+![alt text](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.42.15.png)
 
 ## Run your tests on CircleCI
 After each deployment your tests are running in Circle CI
-- Image
+![alt text](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.43.57.png)
+![alt text](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.44.15.png)
