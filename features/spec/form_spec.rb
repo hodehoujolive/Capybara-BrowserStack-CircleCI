@@ -2,10 +2,6 @@
     fill_in input, :with => data
   end
   
-  When /^I?\s?click the "([^"]*)" button$/ do |text|
-    click_button text
-  end
-  
   When /^I?\s?check "([^"]*)"$/ do |checkbox|
     check checkbox
   end

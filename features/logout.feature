@@ -1,4 +1,4 @@
-Feature: Logout Page
+Feature: Logout
 
 Background:
   Given I am on https://www.saucedemo.com

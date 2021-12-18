@@ -1,4 +1,4 @@
-Feature: Login Page
+Feature: Login
 
 Background:
   Given I am on https://www.saucedemo.com

@@ -18,8 +18,8 @@ And /^I debug$/ do
   save_and_open_page
 end
 
-When /^I submit$/ do
-    find_field('q').native.send_key(:enter)
+When /^I submit form "([^"]*)"$/ do |form|
+    find_field(form).submit
 end
   
 Then /^I should see title "([^\"]*)"$/ do |title|
@@ -40,4 +40,8 @@ end
 
 Then /^I should have current link "([^\"]*)"$/ do |link|
     expect(page).to have_current_path link
+end
+
+When /^I?\s?click with css "([^"]*)"$/ do |css|
+    click_on(class: css)
 end
