@@ -1,9 +1,9 @@
 server: hub-cloud.browserstack.com
-user: jolivgilberth1
-key: Dzi5E3v8hYqszXVskn2j
+user: chastityrastogi_Ly0KMx
+key: XAQ9ssNxyiqykaiyTnhy
 
 common_caps:
-  build: capybara-browserstack
+  build: livestorm-technical-test
   browserstack.debug: true
 
 browser_caps:
