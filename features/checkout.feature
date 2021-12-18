@@ -19,19 +19,19 @@ Scenario: Successful checkout
   And I click "finish"
   And I should have css ".pony_express"
 
-Scenario: proceed to the first verification step without the first name field
+Scenario: Proceed to the first verification step without the first name field
   And I fill in "last-name" with "Hodehou"
   And I fill in "postal-code" with "BP : 358 Cotonou Bénin"
   And I click "continue"
   Then I should see "Error: First Name is required"
 
-Scenario: proceed to the first verification step without the last name field
+Scenario: Proceed to the first verification step without the last name field
   And I fill in "first-name" with "Jolivé"
   And I fill in "postal-code" with "BP : 358 Cotonou Bénin"
   And I click "continue"
   Then I should see "Error: Last Name is required"
 
-Scenario: proceed to the first verification step without the postal code field
+Scenario: Proceed to the first verification step without the postal code field
   And I fill in "first-name" with "Jolivé"
   And I fill in "last-name" with "Hodehou"
   And I click "continue"
