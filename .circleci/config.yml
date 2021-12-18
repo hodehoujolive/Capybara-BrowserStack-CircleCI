@@ -6,7 +6,10 @@ jobs:
       - image: cimg/ruby:3.0.3
     steps:
       - checkout
-      - run: ruby --version
-      - run : gem install bundler
-      - run : bundle install
-      - run : bundle exec rake
+      - run:
+          name: Test
+          command: |
+            ruby --version;
+            gem install bundler;
+            bundle install;
+            bundle exec rake
