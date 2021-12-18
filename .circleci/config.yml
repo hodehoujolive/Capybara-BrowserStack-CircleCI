@@ -14,4 +14,4 @@ jobs:
             bundle install;
             bundle exec rake
       - store_artifacts:
-          path: report/allure-results/
+          path: ~/report/allure-results/
