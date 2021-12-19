@@ -1,10 +1,27 @@
-version: 2.0
+
+version: 2
 jobs:
   build:
     docker:
-      - image: clojure:alpine
-      - image: postgres:9.6
-        environment:
-          POSTGRES_USER: contexts
-          POSTGRES_DB: contexts_service
-      - image: mannimal/vault-cci:latest
+      - image: cimg/ruby:3.0.3
+    steps:
+      - checkout
+      - run:
+          name: e2e tests
+          command: |
+            ruby --version;
+            gem install bundler;
+            bundle install;
+            bundle exec rake
+      - run:
+          name: generate report 
+          command: |
+            sudo apt-get install build-essential curl file git
+            git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
+            mkdir ~/.linuxbrew/bin
+            ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
+            eval $(~/.linuxbrew/bin/brew shellenv)
+            brew install allure
+            allure serve report/allure-results/
+      - store_artifacts:
+          path: report/allure-results/
