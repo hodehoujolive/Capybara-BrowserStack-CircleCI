@@ -17,9 +17,7 @@ jobs:
       - run:
           name: generate report 
           command: |
-            curl -L https://github.com/allure-framework/allure2/releases/download/<< parameters.version >>/allure-commandline-<< parameters.version >>.zip -o /tmp/allure.zip
-            unzip /tmp/allure.zip
-            sudo mv allure-<< parameters.version >> /usr/local/share/allure/bin/allure
+            brew install allure
             allure serve report/allure-results/
       - store_artifacts:
           path: report/allure-results/
