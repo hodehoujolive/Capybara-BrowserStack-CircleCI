@@ -13,6 +13,7 @@ jobs:
             echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/ruby@2.7/bin:$PATH"' >> ~/.profile
             source ~/.profile
             ruby --version
+            gem install bundler
       - run:
           name: generate report 
           command: |
