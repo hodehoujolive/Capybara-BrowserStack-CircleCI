@@ -2,10 +2,9 @@
 version: 2
 jobs:
   build:
-    macos:
-      - xcode: 12.5.1
     docker:
       - image: cimg/ruby:3.0.3
+      - image: homebrew/brew:3.3.8
     steps:
       - checkout
       - run:
