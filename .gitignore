@@ -57,3 +57,4 @@ build-iPhoneSimulator/
 local.log
 Gemfile.lock
 /report/allure-results
+/allure report

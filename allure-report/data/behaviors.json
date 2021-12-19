@@ -1,0 +1,229 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "features",
+    "children" : [ {
+      "name" : "Cart",
+      "children" : [ {
+        "name" : "Add to cart",
+        "uid" : "36cb3865d4154c9c",
+        "parentUid" : "9808e6a1c9e22f2cff58b9068b295ed1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908706517,
+          "stop" : 1639908718890,
+          "duration" : 12373
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Remove to cart",
+        "uid" : "55d52a96045dd1f1",
+        "parentUid" : "9808e6a1c9e22f2cff58b9068b295ed1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908718895,
+          "stop" : 1639908726385,
+          "duration" : 7490
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9808e6a1c9e22f2cff58b9068b295ed1"
+    }, {
+      "name" : "Checkout",
+      "children" : [ {
+        "name" : "Successful checkout",
+        "uid" : "4e2e810c9dd0cac8",
+        "parentUid" : "e5fc8c8300103c09dcacfcbcf17c9885",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908726392,
+          "stop" : 1639908739408,
+          "duration" : 13016
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Proceed to the first verification step without the first name field",
+        "uid" : "2534e69add944bf6",
+        "parentUid" : "e5fc8c8300103c09dcacfcbcf17c9885",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908739413,
+          "stop" : 1639908749336,
+          "duration" : 9923
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Proceed to the first verification step without the last name field",
+        "uid" : "fae3082bb75707be",
+        "parentUid" : "e5fc8c8300103c09dcacfcbcf17c9885",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908749343,
+          "stop" : 1639908760096,
+          "duration" : 10753
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Proceed to the first verification step without the postal code field",
+        "uid" : "636ffc0c8799c39f",
+        "parentUid" : "e5fc8c8300103c09dcacfcbcf17c9885",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908760108,
+          "stop" : 1639908770253,
+          "duration" : 10145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e5fc8c8300103c09dcacfcbcf17c9885"
+    }, {
+      "name" : "Login",
+      "children" : [ {
+        "name" : "Validate Page Elements After Login",
+        "uid" : "c900696ea7ea7e55",
+        "parentUid" : "b9c03c65d8f38759f1510afa9c79abc3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908770263,
+          "stop" : 1639908775179,
+          "duration" : 4916
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login with valid credentials (standard_user / secret_sauce)",
+        "uid" : "a4b3c4e3da8280a0",
+        "parentUid" : "b9c03c65d8f38759f1510afa9c79abc3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908775194,
+          "stop" : 1639908780006,
+          "duration" : 4812
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login with invalid credentials(wrong_username / wrong_password)",
+        "uid" : "abcac347fb82070d",
+        "parentUid" : "b9c03c65d8f38759f1510afa9c79abc3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908780009,
+          "stop" : 1639908785121,
+          "duration" : 5112
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login without username",
+        "uid" : "a93a5067826d6517",
+        "parentUid" : "b9c03c65d8f38759f1510afa9c79abc3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908785141,
+          "stop" : 1639908789077,
+          "duration" : 3936
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login without password",
+        "uid" : "2a5e3c5892b9df93",
+        "parentUid" : "b9c03c65d8f38759f1510afa9c79abc3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908789089,
+          "stop" : 1639908792991,
+          "duration" : 3902
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b9c03c65d8f38759f1510afa9c79abc3"
+    }, {
+      "name" : "Logout",
+      "children" : [ {
+        "name" : "Successful Logout",
+        "uid" : "373b34ca56c6ebca",
+        "parentUid" : "834580d2d9779f1868c5c025757c0325",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908792996,
+          "stop" : 1639908801478,
+          "duration" : 8482
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "834580d2d9779f1868c5c025757c0325"
+    } ],
+    "uid" : "05abfb73463f8510120a7c593540d7ce"
+  } ]
+}

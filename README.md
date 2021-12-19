@@ -23,3 +23,7 @@
 After each deployment your tests are running in Circle CI
 ![alt text](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.43.57.png)
 ![alt text](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.44.15.png)
+
+## Ressouces
+[Capybara Cheat Sheet](https://devhints.io/capybara)
+[Allure Framework](https://docs.qameta.io/allure/)
