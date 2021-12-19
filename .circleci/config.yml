@@ -10,6 +10,7 @@ jobs:
           name: e2e tests
           command: |
             brew install ruby@2.7
+            echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/ruby@2.7/bin:$PATH"' >> ~/.profile
             ruby --version;
             gem install bundler;
             bundle install;
