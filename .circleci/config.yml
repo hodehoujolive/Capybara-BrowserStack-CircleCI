@@ -18,7 +18,10 @@ jobs:
       - run:
           name: generate report 
           command: |
-            sudo apt-get install allure
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+            eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+            brew doctor
+            brew install allure
             allure serve report/allure-results/
       - store_artifacts:
           path: report/allure-results/
