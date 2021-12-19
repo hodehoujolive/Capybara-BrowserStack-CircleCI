@@ -3,8 +3,8 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cimg/ruby:3.0.3
       - image: homebrew/brew:3.3.8
+      - image: cimg/ruby:3.0.3
     steps:
       - checkout
       - run:
