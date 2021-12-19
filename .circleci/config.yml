@@ -16,7 +16,6 @@ jobs:
       - run:
           name: generate report 
           command: |
-            sudo apt-get install build-essential curl file git
             git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
             mkdir ~/.linuxbrew/bin
             ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
