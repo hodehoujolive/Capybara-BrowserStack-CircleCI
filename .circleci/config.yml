@@ -3,7 +3,6 @@ version: 2
 jobs:
   build:
     docker:
-      - image: homebrew/brew:3.3.8
       - image: cimg/ruby:3.0.3
     steps:
       - checkout
@@ -17,6 +16,7 @@ jobs:
       - run:
           name: generate report 
           command: |
+            docker pull homebrew/brew:3.3.8
             brew install allure
             allure serve report/allure-results/
       - store_artifacts:
