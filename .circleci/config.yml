@@ -16,10 +16,7 @@ jobs:
       - run:
           name: generate report 
           command: |
-            git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
-            mkdir ~/.linuxbrew/bin
-            ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
-            eval $(~/.linuxbrew/bin/brew shellenv)
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
             allure serve report/allure-results/
       - store_artifacts:
           path: report/allure-results/
