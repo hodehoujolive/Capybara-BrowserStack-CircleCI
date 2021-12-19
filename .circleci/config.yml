@@ -18,8 +18,7 @@ jobs:
           command: |
             curl -L https://github.com/allure-framework/allure2/releases/download/<< parameters.version >>/allure-commandline-<< parameters.version >>.zip -o /tmp/allure.zip
             unzip /tmp/allure.zip
-            sudo mv allure-<< parameters.version >> /usr/local/share/allure
-            sudo ln -s /usr/local/share/allure/bin/allure /usr/local/bin/allure
+            sudo mv allure-<< parameters.version >> /usr/local/share/allure/bin/allure
             allure serve report/allure-results/
       - store_artifacts:
           path: report/allure-results/
