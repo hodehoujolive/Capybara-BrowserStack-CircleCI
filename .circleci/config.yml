@@ -21,7 +21,7 @@ jobs:
             eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
             sudo apt-get install build-essential
             brew install allure
-            allure generate report/allure-results/
+            allure generate report/allure-results/ --clean
 
       - store_artifacts:
           path: report/allure-results/
