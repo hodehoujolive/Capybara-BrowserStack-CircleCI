@@ -16,9 +16,8 @@ jobs:
       - run:
           name: generate report 
           command: |
-            sudo apt-add-repository ppa:qameta/allure
-            #sudo apt-get update 
-            #sudo apt-get install allure
-            #allure serve report/allure-results/
+            sudo apt-get update -y
+            sudo apt-get install -y allure
+            allure serve report/allure-results/
       - store_artifacts:
           path: report/allure-results/
