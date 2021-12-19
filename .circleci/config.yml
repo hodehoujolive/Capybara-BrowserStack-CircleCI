@@ -4,7 +4,6 @@ orbs:
 jobs:
   build:
     docker:
-      - image: cimg/ruby:3.0.3
       - image: homebrew/brew:3.3.8
     steps:
       - checkout
