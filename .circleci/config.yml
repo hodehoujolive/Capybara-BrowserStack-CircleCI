@@ -3,22 +3,24 @@ version: 2
 jobs:
   build:
     docker:
-      - image: homebrew/brew:3.3.8
+      - image: cimg/ruby:3.0.3
     steps:
       - checkout
       - run:
           name: e2e tests
           command: |
-            brew install ruby@2.7
-            echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/ruby@2.7/bin:$PATH"' >> ~/.profile
-            source ~/.profile
-            ruby --version
-            gem install bundler:2.2.22
-            bundle install
+            ruby --version;
+            gem install bundler;
+            bundle install;
+            bundle exec rake
       - run:
           name: generate report 
           command: |
-            brew install allure
+            sudo apt-get install build-essential curl file git
+            git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
+            mkdir ~/.linuxbrew/bin
+            ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
+            eval $(~/.linuxbrew/bin/brew shellenv)
             allure serve report/allure-results/
       - store_artifacts:
           path: report/allure-results/
