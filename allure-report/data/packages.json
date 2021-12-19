@@ -5,7 +5,7 @@
     "name" : "features",
     "children" : [ {
       "name" : "Add to cart",
-      "uid" : "36cb3865d4154c9c",
+      "uid" : "ffd29a72ca5525cd",
       "parentUid" : "05c057f933be9add362d425b7a690409",
       "status" : "passed",
       "time" : {
@@ -22,7 +22,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Remove to cart",
-      "uid" : "55d52a96045dd1f1",
+      "uid" : "cf9abbccb66cfd77",
       "parentUid" : "05c057f933be9add362d425b7a690409",
       "status" : "passed",
       "time" : {
@@ -39,7 +39,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Successful checkout",
-      "uid" : "4e2e810c9dd0cac8",
+      "uid" : "85cc84a2b75c2b51",
       "parentUid" : "05c057f933be9add362d425b7a690409",
       "status" : "passed",
       "time" : {
@@ -56,7 +56,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Proceed to the first verification step without the first name field",
-      "uid" : "2534e69add944bf6",
+      "uid" : "77dcbd16e8fab2b4",
       "parentUid" : "05c057f933be9add362d425b7a690409",
       "status" : "passed",
       "time" : {
@@ -73,7 +73,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Proceed to the first verification step without the last name field",
-      "uid" : "fae3082bb75707be",
+      "uid" : "ee76e52c020ede1f",
       "parentUid" : "05c057f933be9add362d425b7a690409",
       "status" : "passed",
       "time" : {
@@ -90,7 +90,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Proceed to the first verification step without the postal code field",
-      "uid" : "636ffc0c8799c39f",
+      "uid" : "881b2e356c231861",
       "parentUid" : "05c057f933be9add362d425b7a690409",
       "status" : "passed",
       "time" : {
@@ -107,7 +107,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Validate Page Elements After Login",
-      "uid" : "c900696ea7ea7e55",
+      "uid" : "d2ccb5817d2ca3fc",
       "parentUid" : "05c057f933be9add362d425b7a690409",
       "status" : "passed",
       "time" : {
@@ -124,7 +124,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Login with valid credentials (standard_user / secret_sauce)",
-      "uid" : "a4b3c4e3da8280a0",
+      "uid" : "6c06b8f1f0a55d7",
       "parentUid" : "05c057f933be9add362d425b7a690409",
       "status" : "passed",
       "time" : {
@@ -141,7 +141,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Login with invalid credentials(wrong_username / wrong_password)",
-      "uid" : "abcac347fb82070d",
+      "uid" : "7d48d372d2874259",
       "parentUid" : "05c057f933be9add362d425b7a690409",
       "status" : "passed",
       "time" : {
@@ -158,7 +158,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Login without username",
-      "uid" : "a93a5067826d6517",
+      "uid" : "3887645e076156c9",
       "parentUid" : "05c057f933be9add362d425b7a690409",
       "status" : "passed",
       "time" : {
@@ -175,7 +175,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Login without password",
-      "uid" : "2a5e3c5892b9df93",
+      "uid" : "8f07784ebd29e37d",
       "parentUid" : "05c057f933be9add362d425b7a690409",
       "status" : "passed",
       "time" : {
@@ -192,7 +192,7 @@
       "parameters" : [ ]
     }, {
       "name" : "Successful Logout",
-      "uid" : "373b34ca56c6ebca",
+      "uid" : "b6a9432bd4a5f458",
       "parentUid" : "05c057f933be9add362d425b7a690409",
       "status" : "passed",
       "time" : {

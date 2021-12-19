@@ -6,8 +6,110 @@
     "children" : [ {
       "name" : "52280",
       "children" : [ {
+        "name" : "Add to cart",
+        "uid" : "ffd29a72ca5525cd",
+        "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908706517,
+          "stop" : 1639908718890,
+          "duration" : 12373
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login without username",
+        "uid" : "3887645e076156c9",
+        "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908785141,
+          "stop" : 1639908789077,
+          "duration" : 3936
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Proceed to the first verification step without the last name field",
+        "uid" : "ee76e52c020ede1f",
+        "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908749343,
+          "stop" : 1639908760096,
+          "duration" : 10753
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Successful Logout",
+        "uid" : "b6a9432bd4a5f458",
+        "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908792996,
+          "stop" : 1639908801478,
+          "duration" : 8482
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Remove to cart",
+        "uid" : "cf9abbccb66cfd77",
+        "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908718895,
+          "stop" : 1639908726385,
+          "duration" : 7490
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Successful checkout",
+        "uid" : "85cc84a2b75c2b51",
+        "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639908726392,
+          "stop" : 1639908739408,
+          "duration" : 13016
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
         "name" : "Login without password",
-        "uid" : "2a5e3c5892b9df93",
+        "uid" : "8f07784ebd29e37d",
         "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
         "status" : "passed",
         "time" : {
@@ -24,7 +126,7 @@
         "parameters" : [ ]
       }, {
         "name" : "Proceed to the first verification step without the first name field",
-        "uid" : "2534e69add944bf6",
+        "uid" : "77dcbd16e8fab2b4",
         "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
         "status" : "passed",
         "time" : {
@@ -40,31 +142,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Successful checkout",
-        "uid" : "4e2e810c9dd0cac8",
+        "name" : "Validate Page Elements After Login",
+        "uid" : "d2ccb5817d2ca3fc",
         "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
         "status" : "passed",
         "time" : {
-          "start" : 1639908726392,
-          "stop" : 1639908739408,
-          "duration" : 13016
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Remove to cart",
-        "uid" : "55d52a96045dd1f1",
-        "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1639908718895,
-          "stop" : 1639908726385,
-          "duration" : 7490
+          "start" : 1639908770263,
+          "stop" : 1639908775179,
+          "duration" : 4916
         },
         "flaky" : false,
         "newFailed" : false,
@@ -75,7 +160,7 @@
         "parameters" : [ ]
       }, {
         "name" : "Login with invalid credentials(wrong_username / wrong_password)",
-        "uid" : "abcac347fb82070d",
+        "uid" : "7d48d372d2874259",
         "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
         "status" : "passed",
         "time" : {
@@ -91,42 +176,8 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Add to cart",
-        "uid" : "36cb3865d4154c9c",
-        "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1639908706517,
-          "stop" : 1639908718890,
-          "duration" : 12373
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Proceed to the first verification step without the last name field",
-        "uid" : "fae3082bb75707be",
-        "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1639908749343,
-          "stop" : 1639908760096,
-          "duration" : 10753
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Login with valid credentials (standard_user / secret_sauce)",
-        "uid" : "a4b3c4e3da8280a0",
+        "uid" : "6c06b8f1f0a55d7",
         "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
         "status" : "passed",
         "time" : {
@@ -142,65 +193,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Successful Logout",
-        "uid" : "373b34ca56c6ebca",
-        "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1639908792996,
-          "stop" : 1639908801478,
-          "duration" : 8482
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Login without username",
-        "uid" : "a93a5067826d6517",
-        "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1639908785141,
-          "stop" : 1639908789077,
-          "duration" : 3936
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Proceed to the first verification step without the postal code field",
-        "uid" : "636ffc0c8799c39f",
+        "uid" : "881b2e356c231861",
         "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
         "status" : "passed",
         "time" : {
           "start" : 1639908760108,
           "stop" : 1639908770253,
           "duration" : 10145
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Validate Page Elements After Login",
-        "uid" : "c900696ea7ea7e55",
-        "parentUid" : "291bf5d01625539758ce1bdb8321ec8c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1639908770263,
-          "stop" : 1639908775179,
-          "duration" : 4916
         },
         "flaky" : false,
         "newFailed" : false,
