@@ -1,10 +1,11 @@
 
 version: 2
+orbs:
+  macos: circleci/macos@1.0
 jobs:
   build:
     docker:
       - image: cimg/ruby:3.0.3
-      - image: circleci/macos:2.0.1
     steps:
       - checkout
       - run:
