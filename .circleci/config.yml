@@ -4,7 +4,6 @@ jobs:
   build:
     docker:
       - image: cimg/ruby:3.0.3
-      - image: homebrew/brew:3.3.8
     steps:
       - checkout
       - run:
@@ -17,7 +16,9 @@ jobs:
       - run:
           name: generate report 
           command: |
-            brew install allure
+            sudo apt-add-repository ppa:qameta/allure
+            sudo apt-get update 
+            sudo apt-get install allure
             allure serve report/allure-results/
       - store_artifacts:
           path: report/allure-results/
