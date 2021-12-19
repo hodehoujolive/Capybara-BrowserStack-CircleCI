@@ -1,9 +1,11 @@
-
-version: 2
+version: 2.1
+orbs:
+  ruby: circleci/ruby@1.2.0
 jobs:
   build:
     docker:
       - image: cimg/ruby:3.0.3
+      - image: homebrew/brew:3.3.8
     steps:
       - checkout
       - run:
@@ -14,15 +16,10 @@ jobs:
             bundle install;
             bundle exec rake
       - run:
-          name: generate report 
+          name: generate report
           command: |
-            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-            echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/circleci/.profile
-            eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-            sudo apt-get install build-essential
             brew install allure
             allure generate report/allure-results/ --clean
-
       - store_artifacts:
           path: report/allure-results/
       - store_artifacts:
