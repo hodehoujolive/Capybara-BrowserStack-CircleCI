@@ -1,23 +1,10 @@
-
 version: 2.0
 jobs:
   build:
     docker:
-      - image: cimg/ruby:3.0.3
-      - image: homebrew/brew:3.3.8
-    steps:
-      - checkout
-      - run:
-          name: e2e tests
-          command: |
-            ruby --version;
-            gem install bundler;
-            bundle install;
-            bundle exec rake
-      - run:
-          name: generate report 
-          command: |
-            brew install allure
-            allure serve report/allure-results/
-      - store_artifacts:
-          path: report/allure-results/
+      - image: clojure:alpine
+      - image: postgres:9.6
+        environment:
+          POSTGRES_USER: contexts
+          POSTGRES_DB: contexts_service
+      - image: mannimal/vault-cci:latest
