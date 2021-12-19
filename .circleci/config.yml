@@ -11,8 +11,7 @@ jobs:
           command: |
             brew install ruby@2.7
             echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/ruby@2.7/bin:$PATH"' >> ~/.profile
-            export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/ruby@2.7/lib"
-            export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/ruby@2.7/include"
+            source ~/.bash_profile
             ruby --version
             gem install bundler
             bundle install
