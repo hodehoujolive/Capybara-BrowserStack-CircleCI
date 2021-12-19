@@ -1,5 +1,5 @@
 
-version: 2
+version: 2.1
 orbs:  
   macos: circleci/macos@2
 jobs:
