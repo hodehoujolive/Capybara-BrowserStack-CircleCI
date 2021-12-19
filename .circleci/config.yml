@@ -17,10 +17,13 @@ jobs:
           name: generate report 
           command: |
             /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-            sudo apt-get install build-essential
             echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/circleci/.profile
             eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+            sudo apt-get install build-essential
             brew install allure
-            allure serve report/allure-results/
+            allure generate report/allure-results/
+
       - store_artifacts:
           path: report/allure-results/
+      - store_artifacts:
+          path: allure-report/
