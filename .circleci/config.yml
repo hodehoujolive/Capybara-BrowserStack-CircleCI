@@ -2,10 +2,10 @@
 version: 2
 jobs:
   build:
+    macos:
+      - xcode: 12.5.1
     docker:
       - image: cimg/ruby:3.0.3
-    macos:
-      xcode: 13.0.0
     steps:
       - checkout
       - run:
