@@ -9,7 +9,7 @@ jobs:
       - run:
           name: e2e tests
           command: |
-            brew install ruby
+            brew install ruby@2.7
             ruby --version;
             gem install bundler;
             bundle install;
