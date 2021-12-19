@@ -1,7 +1,5 @@
 
 version: 2
-orbs:
-  macos: circleci/macos@1.0
 jobs:
   build:
     docker:
