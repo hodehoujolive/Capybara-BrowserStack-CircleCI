@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cimg/ruby:3.0.3
+      - image: jolive/rbrew:latest
     steps:
       - checkout
       - run:
@@ -16,11 +16,6 @@ jobs:
       - run:
           name: generate report 
           command: |
-            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-            echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/circleci/.profile
-            eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-            sudo apt-get install build-essential
-            brew install allure
             allure generate report/allure-results/ --clean
 
       - store_artifacts:
