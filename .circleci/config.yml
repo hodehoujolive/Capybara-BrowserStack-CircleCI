@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: jolive/rbrew:latest
+      - image: jolive/rbrew:1.0.0
     steps:
       - checkout
       - run:
