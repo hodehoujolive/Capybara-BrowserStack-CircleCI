@@ -1,5 +1,6 @@
 <img src="https://img.shields.io/badge/ruby%20on%20rails-%23CC0000.svg?&style=for-the-badge&logo=ruby%20on%20rails&logoColor=white" />
-<img src="https://www.brainstobytes.com/content/images/2020/03/download-2.png?&style=for-the-badge&logo=ruby%20on%20rails&logoColor=white" />
+<img src="https://rspec.info/images/logo.png?&style=for-the-badge&logo=ruby%20on%20rails&logoColor=white" />
+![CircleCI](https://img.shields.io/badge/CIRCLECI-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white)
 <img src="https://img.shields.io/badge/cucumber-%2323D96C.svg?&style=for-the-badge&logo=cucumber&logoColor=white" />
 
 ## Requirements
