@@ -16,6 +16,7 @@ jobs:
       - run:
           name: generate report 
           command: |
+            brew -v
             allure generate report/allure-results/ --clean
 
       - store_artifacts:
