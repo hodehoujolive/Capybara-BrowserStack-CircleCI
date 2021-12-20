@@ -26,7 +26,7 @@ For a fast build.
 
 ## Run your tests on CircleCI
 * After each deployment your tests are running in Circle CI
-* I created a ![docker image](https://hub.docker.com/r/jolive/rbrew/tags)to make the build much faster
+* I created a [docker image](https://hub.docker.com/r/jolive/rbrew/tags)to make the build much faster
 ![Tests Circle CI](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.43.57.png)
 ![Circle CI - Dashboard](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.44.15.png)
 
