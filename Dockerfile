@@ -1,2 +1,18 @@
 FROM cimg/ruby:3.0.3
-RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" && echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/circleci/.profile && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" && sudo apt-get install build-essential && brew install allure
+
+RUN sudo apt-get update && sudo apt-get install build-essential curl file git ruby-full locales --no-install-recommends -y && sudo rm -rf /var/lib/apt/lists/*
+
+RUN sudo useradd -m -s /bin/bash linuxbrew
+
+USER linuxbrew
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+
+USER root
+ENV PATH="/home/linuxbrew/.linuxbrew/bin:${PATH}"
+
+
+RUN brew install allure
+
+RUN brew -v
+
+CMD ["bash"]
