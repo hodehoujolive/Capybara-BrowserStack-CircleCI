@@ -10,7 +10,7 @@ jobs:
           name: e2e tests
           command: |
             ruby --version;
-            gem install bundler;
+            gem install bundler:2.2.22
             bundle install;
             bundle exec rake
       - run:
