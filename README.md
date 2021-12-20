@@ -16,13 +16,18 @@
 
 ### Notes
 * You can view your test results on the [BrowserStack Automate dashboard](https://www.browserstack.com/automate)
-![alt text](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.41.55.png)
-![alt text](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.42.15.png)
+![BrowserStack Automate Dashboard](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.41.55.png)
+![BrowserStack Automate Dashboard](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.42.15.png)
 
 ## Run your tests on CircleCI
-After each deployment your tests are running in Circle CI
-![alt text](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.43.57.png)
-![alt text](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.44.15.png)
+* After each deployment your tests are running in Circle CI
+![Tests Circle CI](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.43.57.png)
+![Circle CI - Dashboard](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-18%20at%2016.44.15.png)
+
+* Once the build is finished, you can access the test report in the artifacts tab.
+It click on the `allure-report/index.html`
+![Circle CI - Artifacts](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-20%20at%2006.39.23.png)
+![Allure report](https://github.com/hodehoujolive/Livestorm_Technical_Test/blob/main/assets/Screen%20Shot%202021-12-20%20at%2006.33.36.png)
 
 ## Ressouces
 [Capybara Cheat Sheet](https://devhints.io/capybara)
