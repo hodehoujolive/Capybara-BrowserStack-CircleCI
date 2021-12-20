@@ -1,3 +1,8 @@
+This is an automation project using Capybara, Rspec and a personal touch using cucumber for better code readability.
+The tests are launched in CircleCI (using a docker image I built) and BrowserStack.
+A report after each test run is generated with allure report.
+For a fast build.
+
 ## Requirements
 * Install [Ruby](https://www.ruby-lang.org/fr/documentation/installation/)
 * To check the ruby version `ruby --version`
