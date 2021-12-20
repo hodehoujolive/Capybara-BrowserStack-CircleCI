@@ -1,4 +1,4 @@
-This is an automation project using Capybara, Rspec and a personal touch using cucumber for better code readability.
+This is an test automation project using Capybara, Rspec and a personal touch using cucumber for better code readability.
 The tests are launched in CircleCI (using a docker image I built) and BrowserStack.
 A report after each test run is generated with allure report.
 For a fast build.
